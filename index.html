@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedCeylon™ | Sri Lanka Tours & Holidays</title>
+<meta name="description" content="RedCeylon™ curated Sri Lanka tour packages. Explore culture, wildlife, hill country, beaches and authentic experiences.">
+<style>
+:root{--red:#cf1f19;--red-dark:#a91410;--ink:#171717;--muted:#66706f;--cream:#f7f1e8;--line:#e5dfd5;--white:#fff;--green:#0f6f50;--shadow:0 10px 28px rgba(0,0,0,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}button,select,input,textarea{font:inherit}.container{width:min(1240px,92%);margin:auto}
+.topbar{background:#111;color:#fff;font-size:12px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:20px}
+header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;gap:24px}
+.logo-wrap{display:flex;align-items:center;flex-shrink:0}.logo-img{width:86px;height:86px;object-fit:cover;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 22px rgba(0,0,0,.12);margin-top:16px;z-index:3}
+nav{display:flex;align-items:center;justify-content:center;gap:24px;flex:1;font-size:13px;font-weight:800;text-transform:uppercase}
+nav a{position:relative;padding:31px 0 27px}nav a:hover,nav a.active{color:var(--red)}nav a.active:after{content:"";height:3px;background:var(--red);left:0;right:0;bottom:18px;position:absolute}
+.plan-top{background:var(--red);color:#fff;border:0;border-radius:0 0 0 34px;padding:23px 30px;font-weight:900;text-transform:uppercase;letter-spacing:.4px;min-width:190px;cursor:pointer;align-self:stretch}.plan-top:hover{background:var(--red-dark)}
+.hero{min-height:535px;background:linear-gradient(90deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,.23) 100%),url("https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya_Sri_lanka.jpg?width=2000") center/cover;display:flex;align-items:center;color:#fff}
+.hero-inner{padding:85px 0 78px}.eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;font-weight:900;color:#ffd36c;margin-bottom:12px}
+.hero h1{font:900 clamp(46px,6vw,78px)/1.0 Georgia,serif;margin:0 0 18px;max-width:700px}.hero h1 span{color:var(--red)}.hero p{font-size:18px;line-height:1.65;max-width:680px;margin:0 0 26px;color:#f6f6f6}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{border:1px solid var(--red);background:var(--red);color:#fff;padding:14px 20px;border-radius:6px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.3px;cursor:pointer}.btn:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn.light{background:#fff;color:#222;border-color:#fff}.btn.outline{background:transparent;color:var(--ink);border-color:#cfc6b7}.hero .btn.outline{color:#fff;border-color:#fff}
+.trust-box{background:rgba(0,0,0,.62);backdrop-filter:blur(4px);padding:20px;border-radius:7px;max-width:330px;margin-left:auto}.trust-row{display:flex;gap:12px;margin:11px 0;font-size:13px;line-height:1.35}.trust-row b{display:block;color:#fff}.trust-row small{color:#ddd}
+.search-wrap{margin-top:-52px;position:relative;z-index:10}.searchbar{background:#fff;border-radius:7px;box-shadow:0 12px 30px rgba(0,0,0,.14);padding:16px;display:grid;grid-template-columns:repeat(4,1fr) 170px;gap:10px}.searchbar select{padding:15px 12px;border:1px solid var(--line);border-radius:4px;background:#fff;color:#333;font-size:13px;font-weight:700}
+.section{padding:72px 0}.section.cream{background:var(--cream)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-head h2{font:900 35px Georgia,serif;margin:0}.section-head p{max-width:650px;color:var(--muted);line-height:1.6;margin:0}.redline{color:var(--red)}
+.category-row{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:24px}.cat{height:142px;border-radius:8px;overflow:hidden;position:relative;background-size:cover;background-position:center;box-shadow:0 4px 12px rgba(0,0,0,.1);display:flex;align-items:flex-end}.cat:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.76))}.cat-content{position:relative;z-index:2;color:#fff;padding:13px 11px;width:100%}.cat strong{font:800 16px Georgia,serif;display:block}.cat small{font-size:11px;opacity:.9}
+.content-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}.tour-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:12px 0 18px}.count{font-size:13px;color:var(--muted);font-weight:700}.sort{padding:11px 12px;border:1px solid var(--line);border-radius:4px}
+.tour-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tour-card{background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden;box-shadow:0 4px 13px rgba(0,0,0,.05);transition:.2s}.tour-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.11)}
+.tour-img{height:168px;background-size:cover;background-position:center;position:relative}.day-badge{position:absolute;left:10px;top:10px;background:var(--red);color:#fff;padding:7px 10px;border-radius:4px;font-weight:900;font-size:12px}
+.tour-body{padding:15px}.tour-meta{font-size:10px;font-weight:900;letter-spacing:.45px;text-transform:uppercase;color:var(--muted)}.tour-body h3{font:900 20px Georgia,serif;margin:7px 0 7px;line-height:1.1}.route{font-size:12px;color:#5b6563;line-height:1.45;min-height:34px}
+.price{margin:12px 0 13px;font-size:20px;font-weight:950}.price small{font-size:10px;color:var(--muted);font-weight:600}.card-actions{display:flex;gap:8px}.card-actions .btn{flex:1;text-align:center;padding:11px 10px;font-size:11px}
+.side-stack{display:grid;gap:14px}.side-card{background:#fff;border:1px solid var(--line);border-radius:7px;overflow:hidden;box-shadow:0 4px 13px rgba(0,0,0,.05)}.side-image{height:145px;background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arches%20Bridge%20in%20Ella.jpg?width=1200") center/cover}
+.side-body{padding:16px}.side-body h3{font:900 24px Georgia,serif;margin:0 0 8px;color:#111}.side-body h3 span{color:var(--red)}.checks{padding:0;margin:14px 0 16px;list-style:none}.checks li{margin:9px 0;font-size:12px;font-weight:700}.checks li:before{content:"✓";color:var(--red);font-weight:900;margin-right:8px}
+.review{padding:15px;text-align:center}.stars{color:#0a9d6a;font-size:23px;letter-spacing:1px}.rating{font-weight:900;font-size:16px}.muted{color:var(--muted);font-size:11px}
+.experiences{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.exp{height:205px;border-radius:8px;overflow:hidden;background-size:cover;background-position:center;display:flex;align-items:end;position:relative}.exp:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.72))}.exp strong{position:relative;z-index:2;color:#fff;padding:18px;font:900 23px Georgia,serif}
+.dest-row{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.dest{height:145px;border-radius:7px;overflow:hidden;background-size:cover;background-position:center;display:flex;align-items:end;position:relative}.dest:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.7))}.dest div{position:relative;z-index:2;color:#fff;padding:13px;font-weight:900}.dest small{display:block;font-size:10px;font-weight:600;opacity:.9;margin-top:4px}
+.cta{background:linear-gradient(90deg,var(--red),#ed3b34);color:#fff;padding:58px 0}.cta .container{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font:900 37px Georgia,serif;margin:0 0 8px}.cta p{margin:0;max-width:680px;color:#fff1f0;line-height:1.6}.cta .btn{background:#fff;color:var(--red);border-color:#fff}
+footer{background:#151515;color:#c9cdcc;padding:46px 0 24px}.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}.footergrid h4{color:#fff;margin:0 0 13px}.footergrid a{display:block;margin:8px 0;font-size:12px}.footergrid a:hover{color:#fff}.footer-logo{width:110px;height:110px;border-radius:50%;margin-bottom:12px}
+.credits{border-top:1px solid #303030;margin-top:25px;padding-top:18px;font-size:10px;line-height:1.6;color:#969c9a}.credits a{text-decoration:underline}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:center;justify-content:center;z-index:200;padding:18px}.modal.show{display:flex}.modal-box{background:#fff;max-width:720px;width:100%;max-height:92vh;overflow:auto;border-radius:8px;padding:24px}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.close{border:0;background:#eee;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:18px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgrid .full{grid-column:1/-1}.formgrid input,.formgrid select,.formgrid textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:4px}.formgrid textarea{min-height:100px;resize:vertical}.note{font-size:11px;color:var(--muted);line-height:1.5}.no-results{grid-column:1/-1;padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:7px}
+@media(max-width:1050px){nav{gap:12px}nav a{font-size:11px}.category-row{grid-template-columns:repeat(4,1fr)}.tour-grid{grid-template-columns:repeat(2,1fr)}.dest-row{grid-template-columns:repeat(4,1fr)}.content-layout{grid-template-columns:1fr}.side-stack{grid-template-columns:repeat(3,1fr)}.searchbar{grid-template-columns:1fr 1fr}.searchbar .btn{width:100%}}
+@media(max-width:720px){.topbar{display:none}header{position:relative}.nav{height:70px}.logo-img{width:70px;height:70px;margin-top:8px}nav{display:none}.plan-top{margin-left:auto;min-width:140px;padding:17px 16px;font-size:11px}.hero{min-height:610px}.hero-inner{padding-top:90px}.trust-box{margin:30px 0 0;max-width:none}.search-wrap{margin-top:-35px}.searchbar{grid-template-columns:1fr}.category-row{grid-template-columns:repeat(2,1fr)}.tour-grid{grid-template-columns:1fr}.side-stack{grid-template-columns:1fr}.experiences{grid-template-columns:1fr 1fr}.dest-row{grid-template-columns:repeat(2,1fr)}.cta .container{display:block}.cta .btn{margin-top:18px}.footergrid{grid-template-columns:1fr 1fr}.formgrid{grid-template-columns:1fr}.formgrid .full{grid-column:auto}}
+@media(max-width:480px){.hero h1{font-size:42px}.hero p{font-size:16px}.experiences{grid-template-columns:1fr}.footergrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>REDCEYLON™ — TRAVELS & TOURS IN SRI LANKA</span><span>Curated journeys • Local knowledge • Flexible enquiries</span></div></div>
+
+<header><div class="container nav">
+<a class="logo-wrap" href="https://redceylon.com" aria-label="RedCeylon home"><img class="logo-img" src="logo.jpg" alt="RedCeylon Travels & Tours in Sri Lanka logo"></a>
+<nav><a href="#tours" class="active">Tours</a><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#guide">Travel Guide</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+<button class="plan-top" onclick="openPlanner()">✈ PLAN MY TRIP</button>
+</div></header>
+
+<section class="hero" id="top"><div class="container hero-inner">
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:35px;align-items:center">
+<div><div class="eyebrow">Curated Sri Lanka Tour Packages</div><h1>EXPERIENCE THE<br>REAL <span>SRI LANKA</span></h1><p>Discover handpicked journeys across ancient heritage, wildlife, tea country, tropical beaches and authentic local experiences.</p><div class="actions"><button class="btn" onclick="scrollToTours()">Find My Tour 🔎</button><button class="btn light" onclick="openPlanner()">Customize My Trip</button></div></div>
+<div class="trust-box">
+<div class="trust-row"><div>◉</div><div><b>Local Expertise</b><small>Travel with practical Sri Lanka knowledge</small></div></div>
+<div class="trust-row"><div>✓</div><div><b>Clear Package Pricing</b><small>Indicative USD starting rates with transparent assumptions</small></div></div>
+<div class="trust-row"><div>✦</div><div><b>Handpicked Experiences</b><small>Culture, wildlife, nature, food and coast</small></div></div>
+<div class="trust-row"><div>☎</div><div><b>Enquiry Support</b><small>Customize before you confirm</small></div></div>
+</div></div></div></section>
+
+<div class="search-wrap" id="finder"><div class="container"><div class="searchbar">
+<select id="durationFilter"><option value="">DURATION — Any</option><option value="short">3–5 Days</option><option value="medium">6–7 Days</option><option value="long">8–10 Days</option><option value="extended">11–14 Days</option></select>
+<select id="experienceFilter"><option value="">EXPERIENCE — Any</option><option>Culture</option><option>Wildlife</option><option>Beach</option><option>Nature</option><option>Adventure</option><option>Food</option><option>Tea</option><option>Wellness</option><option>Romance</option><option>Family</option></select>
+<select id="styleFilter"><option value="">TRAVEL STYLE — Any</option><option>Value</option><option>Comfort</option><option>Premium</option><option>Luxury</option></select>
+<select id="travellerFilter"><option value="">TRAVELLERS — Any</option><option>Couple</option><option>Family</option><option>Solo</option><option>Friends</option></select>
+<button class="btn" onclick="applyFilters()">SEARCH TOURS 🔎</button>
+</div></div></div>
+
+<section class="section" id="tours"><div class="container">
+<div class="section-head"><div><div class="eyebrow" style="color:var(--red)">RedCeylon Tour Collection</div><h2>Explore our <span class="redline">tour packages</span></h2></div>
+</div>
+
+<div class="category-row" id="catRow"></div>
+
+<div class="content-layout" style="margin-top:24px"><main>
+<div class="tour-toolbar"><div class="count" id="countLabel">25 Sri Lanka tour packages</div><select class="sort" id="sortSelect" onchange="sortTours()"><option value="recommended">Sort: Recommended</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="days-low">Duration: Shortest First</option><option value="days-high">Duration: Longest First</option></select></div>
+<div class="tour-grid" id="tourGrid"></div>
+</main>
+
+<aside class="side-stack">
+<div class="side-card"><div class="side-image"></div><div class="side-body"><h3><span>PLAN & CUSTOMIZE</span><br>YOUR TRIP</h3><p class="muted" style="font-size:13px;line-height:1.6">Tell us your dates, interests and preferred comfort level. We'll help shape a practical Sri Lanka itinerary around you.</p><ul class="checks"><li>3-star base pricing available</li><li>Private transport options</li><li>Custom routes and hotel upgrades</li><li>No online payment required</li></ul><button class="btn" style="width:100%" onclick="openPlanner()">✈ PLAN MY TRIP</button></div></div>
+<div class="side-card"><div class="side-body"><h3 style="font-size:23px">WHY TRAVEL WITH <span>REDCEYLON?</span></h3><ul class="checks"><li>Local destination knowledge</li><li>Handpicked 3-star+ hotel options</li><li>Air-conditioned private transport</li><li>Transparent package assumptions</li><li>Flexible tour enquiry process</li></ul></div></div>
+<div class="side-card review"><div class="stars">★★★★★</div><div class="rating">Indicative planning model</div><div class="muted">Replace with verified customer reviews when available.</div></div>
+</aside></div></div></section>
+
+<section class="section cream" id="experiences"><div class="container">
+<div class="section-head"><div><div class="eyebrow" style="color:var(--red)">Travel by interest</div><h2>What do you want to <span class="redline">experience?</span></h2></div></div>
+<div class="experiences">
+<div class="exp" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Kandy%20Sri%20Lanka%20Temple%20of%20the%20tooth.jpg?width=1200')"><strong>Culture & Heritage</strong></div>
+<div class="exp" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20Sri%20lanka.jpg?width=1400')"><strong>Wildlife & Nature</strong></div>
+<div class="exp" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mirissa%20Beach%20Sri%20Lanka.jpg?width=1200')"><strong>Beaches & Coast</strong></div>
+<div class="exp" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arches%20Bridge%20in%20Ella.jpg?width=1200')"><strong>Hill Country & Adventure</strong></div>
+</div></div></section>
+
+<section class="section" id="destinations"><div class="container">
+<div class="section-head"><div><div class="eyebrow" style="color:var(--red)">Explore the island</div><h2>Popular <span class="redline">destinations</span></h2></div><p>Each destination can connect directly to relevant tour packages, experiences and travel information.</p></div>
+<div class="dest-row">
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya%20Sri%20lanka.jpg?width=1100')"><div>Sigiriya<small>Ancient rock fortress</small></div></div>
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Kandy%20Sri%20Lanka%20Temple%20of%20the%20tooth.jpg?width=1100')"><div>Kandy<small>Cultural capital</small></div></div>
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Ella%20sri%20lanka.jpg?width=1100')"><div>Ella<small>Scenic highlands</small></div></div>
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1100')"><div>Nuwara Eliya<small>Tea country</small></div></div>
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mirissa%20Beach%20Sri%20Lanka.jpg?width=1100')"><div>Mirissa<small>Tropical coast</small></div></div>
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Galle%20Fort%2C%20Sri%20Lanka.JPG?width=1100')"><div>Galle<small>Historic fort city</small></div></div>
+<div class="dest" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arches%20Bridge%20in%20Ella.jpg?width=1100')"><div>Ella Railway<small>Hill-country journey</small></div></div>
+</div></div></section>
+
+<section class="cta" id="about"><div class="container"><div><div class="eyebrow">Your Sri Lanka, your way</div><h2>Can't find the perfect package?</h2><p>Start with one of our packages or tell us what you want to see. RedCeylon is designed around enquiry and customization rather than forcing you into an online checkout.</p></div><button class="btn" onclick="openPlanner()">REQUEST A CUSTOM TOUR</button></div></section>
+
+<footer id="guide"><div class="container"><div class="footergrid">
+<div><a href="https://redceylon.com" aria-label="RedCeylon home"><img class="footer-logo" src="logo.jpg" alt="RedCeylon logo"></a><div style="font-weight:800;color:#fff">Experience the Real Sri Lanka.</div><p style="font-size:12px;line-height:1.6">Tour packages, destinations and authentic travel ideas built for travellers planning Sri Lanka.</p></div>
+<div><h4>TOURS</h4><a href="#tours">All Tours</a><a href="#tours">Signature Tours</a><a href="#tours">Wildlife</a><a href="#tours">Family</a></div>
+<div><h4>DISCOVER</h4><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#finder">Tour Finder</a><a href="#guide">Travel Guide</a></div>
+<div id="contact"><h4>CONTACT</h4><a href="mailto:rankjayarathna@gmail.com">rankjayarathna@gmail.com</a><a href="tel:+771653296">+771653296</a><a href="#" onclick="openPlanner();return false">Plan My Trip</a><a href="#top">Back to top ↑</a></div>
+</div>
+</div></footer>
+
+<div class="modal" id="plannerModal" role="dialog" aria-modal="true">
+<div class="modal-box"><div class="modal-head"><div><div class="eyebrow" style="color:var(--red)">RedCeylon™</div><h2 style="font:900 31px Georgia,serif;margin:0">Plan My Trip</h2></div><button class="close" onclick="closePlanner()">×</button></div>
+<p class="note" style="margin:12px 0 20px">This is an enquiry form, not an online payment form. Package prices are starting estimates and can be adjusted for dates, hotel category, group size and route.</p>
+<form class="formgrid" onsubmit="submitPlanner(event)">
+<div><label>Name</label><input required name="name" placeholder="Your name"></div><div><label>Email</label><input required type="email" name="email" placeholder="you@example.com"></div>
+<div><label>Arrival date</label><input type="date" name="arrival"></div><div><label>Travellers</label><select name="travellers"><option>2 adults</option><option>1 adult</option><option>3 adults</option><option>4 adults</option><option>Family</option><option>Group</option></select></div>
+<div><label>Trip duration</label><select name="duration"><option>5–7 Days</option><option>8–10 Days</option><option>11–14 Days</option><option>3–4 Days</option><option>15+ Days</option></select></div>
+<div><label>Hotel preference</label><select name="hotel"><option>3-star base</option><option>4-star upgrade</option><option>5-star upgrade</option><option>Luxury</option></select></div>
+<div class="full"><label>Interests</label><input name="interests" placeholder="Culture, wildlife, tea country, beach..."></div>
+<div class="full"><label>Selected tour</label><input id="selectedTour" name="tour" placeholder="e.g. Classic Sri Lanka"></div>
+<div class="full"><label>Notes</label><textarea name="notes" placeholder="Tell us what you would like to change or include."></textarea></div>
+<div class="full"><button class="btn" type="submit">SEND TOUR REQUEST</button></div>
+</form>
+<div id="plannerStep2" style="display:none;text-align:center;padding:10px 0 4px">
+ <div style="font-size:38px;line-height:1;margin-bottom:10px">✓</div>
+ <h3 style="font:900 22px Georgia,serif;margin:0 0 8px">Thanks — your details are ready</h3>
+ <p class="note" style="margin:0 0 22px">Choose how you'd like to send your enquiry to RedCeylon. We'll get back to you as soon as possible.</p>
+ <div style="display:grid;gap:10px;max-width:340px;margin:0 auto">
+  <a class="btn" id="plannerWhatsapp" target="_blank" rel="noopener" style="background:#25D366;border-color:#25D366;display:block;text-align:center">💬 Continue on WhatsApp</a>
+  <a class="btn outline" id="plannerEmail" style="border-color:var(--line);display:block;text-align:center">✉ Send via Email</a>
+  <button class="btn outline" type="button" style="border-color:var(--line)" onclick="closePlanner()">Close</button>
+ </div>
+</div>
+</div></div>
+
+<script>
+const FX=335, dayRate=75;
+const img={
+sig:"https://commons.wikimedia.org/wiki/Special:FilePath/Sigiriya_Sri_lanka.jpg?width=1200",
+kandy:"https://commons.wikimedia.org/wiki/Special:FilePath/Kandy%20Sri%20Lanka%20Temple%20of%20the%20tooth.jpg?width=1200",
+ella:"https://commons.wikimedia.org/wiki/Special:FilePath/Ella%20sri%20lanka.jpg?width=1200",
+tea:"https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1200",
+beach:"https://commons.wikimedia.org/wiki/Special:FilePath/Mirissa%20Beach%20Sri%20Lanka.jpg?width=1200",
+bridge:"https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arches%20Bridge%20in%20Ella.jpg?width=1200",
+galle:"https://commons.wikimedia.org/wiki/Special:FilePath/Galle%20Fort%2C%20Sri%20Lanka.JPG?width=1200"
+};
+
+const tours=[
+["RC-001","Sri Lanka Highlights",7,"Signature","Culture,Wildlife,Beach","Premium","Couple,Family","Colombo • Kandy • Sigiriya • Nuwara Eliya • Galle",850,50,120,img.sig,"A balanced first journey across Sri Lanka's heritage, hill country and coast."],
+["RC-002","Classic Sri Lanka",10,"Signature","Culture,Wildlife,Tea,Beach","Premium","Couple,Family","Colombo • Sigiriya • Kandy • Nuwara Eliya • Ella • Yala • Galle",1200,55,170,img.ella,"A complete first-time route through Sri Lanka's essential regions."],
+["RC-003","Discover Sri Lanka",12,"Signature","Culture,Wildlife,Nature,Beach","Premium","Couple,Family,Friends","Cultural Triangle • Kandy • Hill Country • Yala • South Coast",1500,55,220,img.beach,"A deeper island journey with more time for nature, wildlife and coastal relaxation."],
+["RC-004","Ultimate Sri Lanka",14,"Signature","Culture,Wildlife,Beach,Adventure","Luxury","Couple,Family","Sigiriya • Kandy • Tea Country • Ella • Yala • South Coast",1750,75,320,img.beach,"An extended premium journey covering Sri Lanka's signature landscapes and experiences."],
+["RC-005","Cultural Triangle Escape",5,"Culture","Culture","Comfort","Couple,Family","Sigiriya • Dambulla • Polonnaruwa • Anuradhapura",650,48,90,img.sig,"A focused heritage escape through Sri Lanka's ancient heartland."],
+["RC-006","Ancient Sri Lanka",7,"Culture","Culture,Nature","Premium","Couple,Family","Anuradhapura • Sigiriya • Polonnaruwa • Dambulla • Kandy",900,50,120,img.kandy,"Ancient cities, sacred sites and living culture in one compact itinerary."],
+["RC-007","Heritage & Hill Country",8,"Culture","Culture,Tea,Nature","Premium","Couple,Family","Sigiriya • Kandy • Nuwara Eliya • Ella",950,52,130,img.tea,"Move from ancient kingdoms into misty mountains and tea country."],
+["RC-008","Sri Lanka Wildlife Escape",5,"Wildlife","Wildlife,Nature","Comfort","Couple,Friends,Family","Kandy • Udawalawe • Yala",700,50,150,img.sig,"A compact safari-focused escape for wildlife lovers."],
+["RC-009","Wild Sri Lanka",7,"Wildlife","Wildlife,Nature,Adventure","Premium","Couple,Friends","Sigiriya • Kandy • Udawalawe • Yala • Galle",1000,55,220,img.sig,"A wildlife-focused journey balanced with scenic central Sri Lanka."],
+["RC-010","Ultimate Wildlife Safari",10,"Wildlife","Wildlife,Nature,Adventure","Luxury","Couple,Friends","Wilpattu • Sigiriya • Minneriya • Udawalawe • Yala",1500,75,350,img.sig,"A dedicated safari itinerary designed around varied wildlife habitats."],
+["RC-011","Kandy & Tea Country",5,"Special Interest","Tea,Nature,Culture","Comfort","Couple,Family","Kandy • Nuwara Eliya • Tea Country",500,50,100,img.tea,"A scenic escape into Kandy, tea estates and Sri Lanka's central highlands."],
+["RC-012","Kandy • Nuwara Eliya • Ella",7,"Special Interest","Tea,Nature,Adventure","Premium","Couple,Friends","Kandy • Nuwara Eliya • Ella",650,52,120,img.bridge,"The classic hill-country route with tea landscapes and mountain experiences."],
+["RC-013","Southern Coast Escape",5,"Beach","Beach,Nature,Romance","Comfort","Couple,Family","Galle • Mirissa • Southern Coast",500,50,90,img.beach,"Relax on the southern coast with Galle heritage and tropical beach time."],
+["RC-014","Beach & Culture",8,"Beach","Beach,Culture,Food","Premium","Couple,Family","Sigiriya • Kandy • Galle • Mirissa",850,55,110,img.beach,"Heritage and culture followed by a relaxed southern coastal stay."],
+["RC-015","Tropical Sri Lanka",10,"Beach","Beach,Wildlife,Culture","Premium","Couple,Family","Cultural Triangle • Hill Country • Yala • South Coast",1150,55,170,img.beach,"A balanced holiday combining ancient sites, wildlife and the tropical coast."],
+["RC-016","Sri Lanka Honeymoon",7,"Romance","Romance,Beach,Nature","Premium","Couple","Kandy • Nuwara Eliya • Ella • South Coast",850,60,160,img.tea,"A romantic route combining mountain scenery, quiet moments and beach time."],
+["RC-017","Luxury Honeymoon Escape",10,"Romance","Romance,Beach,Wellness","Luxury","Couple","Sigiriya • Kandy • Ella • Yala • South Coast",1200,85,220,img.beach,"A slower luxury journey designed around privacy, scenery and memorable experiences."],
+["RC-018","Family Sri Lanka",7,"Family","Family,Culture,Wildlife,Beach","Comfort","Family","Negombo • Sigiriya • Kandy • Hill Country • Coast",750,50,100,img.sig,"A family-friendly mix of culture, nature, wildlife and relaxation."],
+["RC-019","Family Adventure",10,"Family","Family,Wildlife,Adventure,Beach","Premium","Family","Sigiriya • Kandy • Ella • Yala • South Coast",1050,55,160,img.bridge,"An active family itinerary with wildlife, nature and coastal downtime."],
+["RC-020","Sri Lanka Food Journey",7,"Special Interest","Food,Culture","Premium","Couple,Friends","Colombo • Kandy • Hill Country • Galle",700,55,150,img.kandy,"Explore Sri Lankan flavours, markets, local kitchens and regional food culture."],
+["RC-021","Tea & Plantation Journey",6,"Special Interest","Tea,Nature,Culture","Premium","Couple,Friends","Kandy • Nuwara Eliya • Haputale • Ella",600,55,110,img.tea,"A journey into tea landscapes and plantation culture in the central highlands."],
+["RC-022","Sri Lanka Photography Tour",9,"Special Interest","Nature,Wildlife,Culture,Adventure","Premium","Solo,Friends","Sigiriya • Kandy • Ella • Yala • Galle",1050,60,180,img.ella,"A visually rich route around landscapes, wildlife and cultural scenes."],
+["RC-023","Wellness & Ayurveda Escape",8,"Special Interest","Wellness,Nature,Beach","Luxury","Couple,Family","Cultural Triangle • Hill Country • South Coast",900,75,240,img.beach,"A restorative journey combining Sri Lankan wellness traditions and nature."],
+["RC-024","Ramayana Trail",7,"Special Interest","Culture,Spiritual","Premium","Couple,Family","Colombo • Kandy • Nuwara Eliya • Ella • South",1100,60,140,img.kandy,"A themed journey built around locations associated with the Ramayana tradition."],
+["RC-025","Walking & Nature Journey",8,"Special Interest","Nature,Adventure,Tea","Premium","Solo,Friends","Kandy • Knuckles • Nuwara Eliya • Ella",850,60,150,img.ella,"An active highland journey focused on trails, landscapes and mountain scenery."]
+];
+
+const catInfo=[
+["All Tours",25,img.sig,""],["Signature Tours",4,img.sig,"Signature"],["Culture & Heritage",7,img.kandy,"Culture"],["Wildlife Safaris",3,img.sig,"Wildlife"],
+["Hill Country",2,img.tea,"Hill"],["Beach Escapes",3,img.beach,"Beach"],["Romance",2,img.beach,"Romance"],["Family Tours",2,img.sig,"Family"]
+];
+
+let activeCategory="";let visible=[...tours];
+const builtPages=["RC-001","RC-002","RC-003","RC-004","RC-005","RC-006","RC-007","RC-008","RC-009","RC-010","RC-011","RC-012","RC-013","RC-014","RC-015","RC-016","RC-017","RC-018","RC-019","RC-020","RC-021","RC-022","RC-023","RC-024","RC-025"];
+
+function calcPrice(t){
+ const days=t[2],nights=t[2]-1,hotel=t[9],activities=t[10];
+ const accom=(nights*hotel)/2;
+ const transport=(days*dayRate)/2;
+ const meals=t[2]*10;
+ const operations=45;
+ const subtotal=accom+transport+meals+activities+operations;
+ return Math.round((subtotal*1.18)/5)*5;
+}
+function priceFor(t){return calcPrice(t).toLocaleString("en-US")}
+function durationGroup(days){return days<=5?"short":days<=7?"medium":days<=10?"long":"extended"}
+
+function renderCategories(){
+ const row=document.getElementById("catRow");row.innerHTML="";
+ catInfo.forEach(c=>{
+  const [label,count,bg,val]=c;
+  row.insertAdjacentHTML("beforeend",`<button class="cat" style="border:0;cursor:pointer;background-image:url('${bg}')" onclick="selectCategory('${val}')"><div class="cat-content"><strong>${label}</strong><small>${count} Tours</small></div></button>`);
+ });
+}
+function renderTours(data=visible){
+ const grid=document.getElementById("tourGrid");grid.innerHTML="";
+ document.getElementById("countLabel").textContent=`${data.length} Sri Lanka tour package${data.length===1?"":"s"}`;
+ if(!data.length){grid.innerHTML='<div class="no-results">No packages match those filters. Try a wider duration, experience or travel style.</div>';return}
+ data.forEach(t=>{
+  const [id,name,days,category,exp,style,travellers,route,km,hotel,activity,bg,desc]=t;
+  grid.insertAdjacentHTML("beforeend",`
+  <article class="tour-card">
+   <div class="tour-img" style="background-image:url('${bg}')"><span class="day-badge">${days} DAYS</span></div>
+   <div class="tour-body">
+    <div class="tour-meta">${category} · ${style} · ${km} KM</div>
+    <h3>${name}</h3>
+    <div class="route">${route}</div>
+    <div class="price">USD ${priceFor(t)} <small>per person*</small></div>
+    <div class="card-actions"><button class="btn light" style="color:#222" onclick="${builtPages.includes(id)?`window.location.href='${id.toLowerCase().replace('-','')}.html'`:`quickView(${JSON.stringify(t)})`}">Details</button><button class="btn" onclick='selectTour(${JSON.stringify(t)})'>Enquire</button></div>
+   </div>
+  </article>`);
+ });
+}
+function filterData(){
+ const d=document.getElementById("durationFilter").value,e=document.getElementById("experienceFilter").value,s=document.getElementById("styleFilter").value,tr=document.getElementById("travellerFilter").value;
+ visible=tours.filter(t=>
+  (!activeCategory||t[3]===activeCategory)&&(!d||durationGroup(t[2])===d)&&(!e||t[4].split(",").includes(e))&&(!s||t[5]===s)&&(!tr||t[6].split(",").includes(tr))
+ );
+ sortTours(false);
+}
+function applyFilters(){filterData();document.getElementById("tours").scrollIntoView({behavior:"smooth"})}
+function sortTours(scroll=true){
+ const type=document.getElementById("sortSelect").value,arr=[...visible];
+ if(type==="price-low")arr.sort((a,b)=>calcPrice(a)-calcPrice(b));
+ if(type==="price-high")arr.sort((a,b)=>calcPrice(b)-calcPrice(a));
+ if(type==="days-low")arr.sort((a,b)=>a[2]-b[2]);
+ if(type==="days-high")arr.sort((a,b)=>b[2]-a[2]);
+ visible=arr;renderTours(arr);
+ if(scroll)document.getElementById("tours").scrollIntoView({behavior:"smooth"});
+}
+function selectCategory(cat){
+ activeCategory=cat;
+ document.getElementById("durationFilter").value="";
+ document.getElementById("experienceFilter").value="";
+ document.getElementById("styleFilter").value="";
+ document.getElementById("travellerFilter").value="";
+ filterData();document.getElementById("tours").scrollIntoView({behavior:"smooth"});
+}
+function scrollToTours(){document.getElementById("tours").scrollIntoView({behavior:"smooth"})}
+function selectTour(t){document.getElementById("selectedTour").value=t[1];openPlanner()}
+function quickView(t){
+ const [id,name,days,category,exp,style,travellers,route,km,hotel,activity,bg,desc]=t;
+ const nights=days-1,price=calcPrice(t);
+ alert(`${name}\n\n${days} days / ${nights} nights\nTravel style: ${style}\nRoute: ${route}\n\nEstimated starting price: USD ${price.toLocaleString()} per person*\n\nPricing model: 3-star hotel USD ${hotel}/room/night + private transport USD ${dayRate}/day + breakfast/food allowance + selected experience allowance + operations + 18% planning buffer.\n\n${desc}`);
+}
+const WHATSAPP_NUMBER="94771653296", CONTACT_EMAIL="rankjayarathna@gmail.com";
+function openPlanner(){
+ document.getElementById("plannerModal").classList.add("show");
+ document.querySelector("#plannerModal form").style.display="grid";
+ document.getElementById("plannerStep2").style.display="none";
+}
+function closePlanner(){
+ document.getElementById("plannerModal").classList.remove("show");
+ document.querySelector("#plannerModal form").style.display="grid";
+ document.getElementById("plannerStep2").style.display="none";
+}
+function submitPlanner(e){
+ e.preventDefault();const f=new FormData(e.target);
+ const lines=[
+  "New RedCeylon Tour Enquiry","",
+  `Name: ${f.get("name")}`,`Email: ${f.get("email")}`,`Arrival: ${f.get("arrival")||"Flexible"}`,
+  `Travellers: ${f.get("travellers")}`,`Duration: ${f.get("duration")}`,`Hotel: ${f.get("hotel")}`,
+  `Interests: ${f.get("interests")||"-"}`,`Selected tour: ${f.get("tour")||"-"}`,`Notes: ${f.get("notes")||"-"}`
+ ];
+ const message=lines.join("\n");
+ document.getElementById("plannerWhatsapp").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+ const subject=encodeURIComponent("RedCeylon Tour Enquiry"+(f.get("tour")?` — ${f.get("tour")}`:""));
+ document.getElementById("plannerEmail").href=`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${encodeURIComponent(message)}`;
+ e.target.style.display="none";
+ document.getElementById("plannerStep2").style.display="block";
+}
+document.getElementById("plannerModal").addEventListener("click",e=>{if(e.target.id==="plannerModal")closePlanner()});
+renderCategories();renderTours(tours);
+</script>
+</body></html>
+

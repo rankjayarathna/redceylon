@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kandy • Nuwara Eliya • Ella - RedCeylon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* RedCeylon Premium Color System */
+            --primary: #C94F32; /* Ceylon Terracotta */
+            --primary-hover: #A83D22; /* Deep Rust */
+            --secondary: #0F6F50; /* Tea Leaf Green */
+            --bg-alt: #F7F1E8; /* Warm Sand */
+            --white: #FFFFFF; /* Pure White */
+            --text-dark: #171717; /* Deep Ink */
+            --text-light: #546E7A; /* Slate Blue-Grey */
+            --border: #E5DFD5; /* Soft Stone */
+            
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Scenic Navbar */
+        .navbar {
+            /* Natural scenic background for the menu bar with a dark overlay for contrast */
+            background: linear-gradient(rgba(15, 111, 80, 0.85), rgba(23, 23, 23, 0.85)), url('https://images.unsplash.com/photo-1544928147-79a2dbc1f389?auto=format&fit=crop&q=80&w=1200') center/cover;
+            padding: 12px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .navbar img {
+            height: 60px;
+            width: auto;
+            background-color: var(--white);
+            padding: 5px 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Hero Section with Natural Tour Image */
+        .hero {
+            /* Lush tea plantation representing Nuwara Eliya */
+            background: linear-gradient(rgba(23, 23, 23, 0.6), rgba(23, 23, 23, 0.6)), url('https://images.unsplash.com/photo-1544451822-38e32b887c08?auto=format&fit=crop&q=80&w=2000') center/cover;
+            color: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 14px 30px;
+            font-weight: 700;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Quick Facts */
+        .quick-facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-top: -40px;
+            position: relative;
+            border: 1px solid var(--border);
+        }
+
+        .fact-item {
+            flex: 1 1 200px;
+            text-align: center;
+        }
+
+        .fact-item strong {
+            display: block;
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        /* Main Layout */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 60px 0;
+        }
+
+        .content-left {
+            flex: 2 1 600px;
+        }
+
+        .content-right {
+            flex: 1 1 300px;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* Itinerary Timeline */
+        .timeline-item {
+            border-left: 2px solid var(--border);
+            padding-left: 25px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: var(--white);
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+        }
+
+        .timeline-item h3 {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+        
+        .timeline-item p {
+            color: var(--text-light);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 14px 15px;
+            border: 1px solid var(--border);
+            text-align: left;
+            color: var(--text-light);
+        }
+
+        th {
+            background-color: var(--bg-alt);
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        
+        td strong {
+            color: var(--text-dark);
+        }
+
+        /* Sidebar Sidebar */
+        .sidebar-card {
+            background: var(--bg-alt);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary);
+            margin-bottom: 30px;
+        }
+
+        .sidebar-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .price-tag {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-family: var(--font-heading);
+        }
+
+        .price-tag span {
+            font-size: 1rem;
+            color: var(--text-light);
+            font-family: var(--font-body);
+            font-weight: 400;
+        }
+
+        /* Map */
+        .map-container {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0; 
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(23, 23, 23, 0.75);
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-content {
+            background-color: var(--white); 
+            margin: 5vh auto; 
+            padding: 40px;
+            border-radius: 12px; 
+            width: 90%; 
+            max-width: 500px; 
+            text-align: center;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: modalFadeIn 0.3s;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .close {
+            position: absolute; 
+            right: 20px; 
+            top: 15px; 
+            font-size: 28px; 
+            font-weight: bold; 
+            color: var(--text-light);
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close:hover {
+            color: var(--primary);
+        }
+
+        .modal-logo {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery-grid figure {
+            margin: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            background: var(--bg-alt);
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Related Tour Cards */
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .related-card {
+            display: block;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            color: inherit;
+            background: var(--white);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .related-card:hover {
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+        }
+
+        .related-card .related-card-img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: var(--bg-alt);
+        }
+
+        .related-card .related-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .related-card-body {
+            padding: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .related-grid { grid-template-columns: 1fr 1fr; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 400px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Optional Experiences list (sidebar) */
+        .addon-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .addon-item:last-child { border-bottom: none; }
+
+        .addon-item .addon-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+        }
+
+        .addon-item .addon-price {
+            color: var(--primary);
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+
+        .addon-item .addon-desc {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        /* Booking Form */
+        .form-group {
+            text-align: left;
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .form-row .form-group { flex: 1; }
+
+        .tour-ref-badge {
+            display: inline-block;
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+
+        .form-error {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: -8px;
+            margin-bottom: 16px;
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .content-left, .content-right { flex: 1 1 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with Scenic Background & Logo Only -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="https://redceylon.com" aria-label="Back to Homepage">
+                <img src="logo.jpg" alt="RedCeylon Logo">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <p style="letter-spacing: 2px; font-weight: 700; text-transform: uppercase;">SRI LANKA / HILL COUNTRY</p>
+            <h1>Kandy &bull; Nuwara Eliya &bull; Ella</h1>
+            <p>7 Days / 6 Nights &bull; Travel Style: Premium</p>
+            <button class="btn-primary open-modal-btn">Request This Tour</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Quick Facts -->
+        <div class="quick-facts">
+            <div class="fact-item">
+                <strong>Duration</strong>
+                7 Days / 6 Nights
+            </div>
+            <div class="fact-item">
+                <strong>Start / End</strong>
+                Colombo (Airport)
+            </div>
+            <div class="fact-item">
+                <strong>Traveller Type</strong>
+                Couple, Friends
+            </div>
+            <div class="fact-item">
+                <strong>Difficulty</strong>
+                Easy – Moderate
+            </div>
+            <div class="fact-item">
+                <strong>Best Time</strong>
+                Dec&ndash;Mar, Jul&ndash;Sep
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Left Column: Main Content -->
+            <div class="content-left">
+
+                <section>
+                    <h2>Tour Overview</h2>
+                    <p style="color: var(--text-light);">RedCeylon's classic hill-country route, giving the central highlands a full week rather than a single overnight stop. Kandy &bull; Nuwara Eliya &bull; Ella moves from the cultural capital through working tea estates to the scenic finish at Nine Arch Bridge, with free days built in for hiking or simply taking in the views.</p>
+                </section>
+
+                <section>
+                    <h2>Why You'll Love This Tour</h2>
+                    <ul>
+                        <li>The most complete hill-country-only circuit RedCeylon offers</li>
+                        <li>A full free day in both Nuwara Eliya and Ella to hike or relax</li>
+                        <li>Working tea-factory tour and tasting included</li>
+                        <li>Ends in Ella, easy to extend toward the south coast afterward</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Tour Highlights</h2>
+                    <ul>
+                        <li>Temple of the Sacred Tooth Relic and Kandy Lake</li>
+                        <li>A guided tour and tasting at a working tea factory</li>
+                        <li>Free time around Gregory Lake and Nuwara Eliya's colonial town centre</li>
+                        <li>Optional early-morning Horton Plains / World's End hike</li>
+                        <li>Nine Arch Bridge and Little Adam's Peak in Ella</li>
+                        <li>Scenic drives through waterfalls and rolling tea estates throughout</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Route Map</h2>
+                    <div class="map-container">
+                        <iframe
+                          width="100%"
+                          height="450"
+                          style="border:0;"
+                          loading="lazy"
+                          allowfullscreen
+                          referrerpolicy="no-referrer-when-downgrade"
+                          src="https://maps.google.com/maps?saddr=Colombo,+Sri+Lanka&daddr=Kandy,+Sri+Lanka+to:Nuwara+Eliya,+Sri+Lanka+to:Ella,+Sri+Lanka+to:Colombo,+Sri+Lanka&output=embed">
+                        </iframe>
+                    </div>
+                    <p style="color: var(--text-light);"><em>Approx. total private-vehicle distance: ~550 km over the full circuit.</em></p>
+                </section>
+
+                <section>
+                    <h2>Day-by-Day Itinerary</h2>
+
+                    <div class="timeline-item">
+                        <h3>Day 01 — Arrival, Colombo to Kandy</h3>
+                        <p>Arrive and drive to Kandy via a spice-garden stop. Overnight Kandy.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Day 02 — Kandy</h3>
+                        <p>Visit the Temple of the Sacred Tooth Relic and the Royal Botanical Gardens at Peradeniya. Evening (seasonal) Kandyan dance show. Overnight Kandy.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Day 03 — Kandy to Nuwara Eliya, Tea Country</h3>
+                        <p>Scenic drive into the hills, stopping at a working tea factory for a tour and tasting. Overnight Nuwara Eliya.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Day 04 — Nuwara Eliya at Leisure</h3>
+                        <p>Free day around Gregory Lake and the colonial-era town, or an optional early-morning Horton Plains / World's End hike. Overnight Nuwara Eliya.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Day 05 — Nuwara Eliya to Ella</h3>
+                        <p>Drive through waterfalls and tea estates to Ella. Afternoon walk to Nine Arch Bridge. Overnight Ella.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Day 06 — Ella at Leisure</h3>
+                        <p>Free day to hike Little Adam's Peak or Ella Rock, visit Ravana Falls, or simply relax with hill-country views. Overnight Ella.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Day 07 — Ella to Colombo, Departure</h3>
+                        <p>Full-day drive (or optional scenic train transfer partway) back to Colombo for onward flight. Tour ends.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Accommodation Tiers</h2>
+
+                    <table>
+                        <tr>
+                            <th>Tier</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><strong>3-Star / Boutique Base</strong></td>
+                            <td>Comfortable local 3-star hotels or small boutique/heritage properties, twin sharing, breakfast included</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4-Star Upgrade</strong></td>
+                            <td>Branded international/local 4-star properties in each destination</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5-Star Upgrade</strong></td>
+                            <td>Premium resorts and boutique heritage properties</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Luxury Option</strong></td>
+                            <td>Signature luxury properties (e.g., private pool villas, tea bungalows)</td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>
+                    <h2>Best Time to Travel</h2>
+                    <p style="color: var(--text-light);"><strong>Recommended: Dec&ndash;Mar, Jul&ndash;Sep.</strong> With three hill-country bases on the route, layers are worth packing regardless of season.</p>
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Dec&ndash;Mar</strong> — the most settled window across the whole highland route</li>
+                        <li><strong>Jul&ndash;Sep</strong> — also generally good, with a chance of afternoon mist</li>
+                        <li><strong>Apr &amp; Nov</strong> — inter-monsoon; possible short, heavy afternoon showers but still workable</li>
+                        <li>Nuwara Eliya and Ella are cooler year-round — bring a light jacket for both</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Gallery</h2>
+                    <div class="gallery-grid">
+                        <figure>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kandy%20Sri%20Lanka%20Temple%20of%20the%20tooth.jpg?width=1200" alt="Temple of the Sacred Tooth Relic, Kandy" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1200" alt="Tea estates, Nuwara Eliya" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arches%20Bridge%20in%20Ella.jpg?width=1200" alt="Nine Arches Bridge, Ella" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ella%20sri%20lanka.jpg?width=1200" alt="Hill country views near Ella" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1200" alt="Tea pickers, central highlands" loading="lazy">
+                        </figure>
+                        <figure>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nine%20Arches%20Bridge%20in%20Ella.jpg?width=1200" alt="Little Adam's Peak trail, Ella" loading="lazy">
+                        </figure></div>
+                </section>
+
+                <section>
+                    <h2>Related Tours</h2>
+                    <div class="related-grid">
+                        <a href="rc011.html" class="related-card">
+                            <div class="related-card-img">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1200" alt="Kandy &amp; Tea Country tour cover" loading="lazy">
+                            </div>
+                            <div class="related-card-body">
+                                <strong style="color: var(--text-dark); font-size: 1.1rem;">Kandy &amp; Tea Country</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 6px; font-weight: 600;">5 Days &middot; Hill Country</p>
+                            </div>
+                        </a>
+                        <a href="rc007.html" class="related-card">
+                            <div class="related-card-img">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1200" alt="Heritage &amp; Hill Country tour cover" loading="lazy">
+                            </div>
+                            <div class="related-card-body">
+                                <strong style="color: var(--text-dark); font-size: 1.1rem;">Heritage &amp; Hill Country</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 6px; font-weight: 600;">8 Days &middot; Culture &amp; Heritage</p>
+                            </div>
+                        </a>
+                        <a href="rc016.html" class="related-card">
+                            <div class="related-card-img">
+                                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nuwara%20Eliya%20Tea.jpg?width=1200" alt="Sri Lanka Honeymoon tour cover" loading="lazy">
+                            </div>
+                            <div class="related-card-body">
+                                <strong style="color: var(--text-dark); font-size: 1.1rem;">Sri Lanka Honeymoon</strong>
+                                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 6px; font-weight: 600;">7 Days &middot; Romance</p>
+                            </div>
+                        </a></div>
+                </section>
+
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <div class="content-right">
+
+                <div class="sidebar-card" id="request">
+                    <h3>Estimated Price</h3>
+                    <div class="price-tag">$770 <span>/ person</span></div>
+                    <p style="color: var(--text-light); font-size: 0.95rem;"><em>Twin sharing, based on 2 travellers, 3-star/boutique base accommodation.</em></p>
+                    <hr style="border: 0; border-top: 1px solid var(--border); margin: 15px 0;">
+                    <p style="font-size: 0.9rem; margin-bottom: 20px; color: var(--text-light);">Price varies with travel dates, number of travellers, and hotel category selected. Final pricing confirmed upon enquiry.</p>
+                    <button class="btn-primary open-modal-btn" style="width: 100%; text-align: center;">Request Quote</button>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>What's Included</h3>
+                    <ul style="font-size: 0.95rem;">
+                        <li>Private A/C vehicle &amp; English-speaking driver</li>
+                        <li>6 nights accommodation with breakfast</li>
+                        <li>Temple of the Tooth entry</li>
+                        <li>Tea factory tour &amp; tasting</li>
+                        <li>All listed transfers</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Not Included</h3>
+
+                    <ul style="font-size: 0.95rem;">
+                        <li style="color: var(--text-light);"><span style="color: transparent;">✓</span> International flights &amp; Visa</li>
+                        <li style="color: var(--text-light);"><span style="color: transparent;">✓</span> Lunches and dinners</li>
+                        <li style="color: var(--text-light);"><span style="color: transparent;">✓</span> Personal expenses &amp; tips</li>
+                        <li style="color: var(--text-light);"><span style="color: transparent;">✓</span> Travel insurance</li>
+                    </ul>
+
+                </div>
+
+                <div class="sidebar-card">
+                    <h3>Optional Experiences</h3>
+                    <div class="addon-item">
+                        <div class="addon-row"><span>Cultural dance</span><span class="addon-price">$6</span></div>
+                        <div class="addon-desc">Traditional Kandyan dance and fire-walking show, evening performance in Kandy.</div>
+                    </div>
+                    <div class="addon-item">
+                        <div class="addon-row"><span>Horton Plains / World's End hike</span><span class="addon-price">$25–$35</span></div>
+                        <div class="addon-desc">Early-morning guided hike to the escarpment viewpoint.</div>
+                    </div>
+                    <div class="addon-item">
+                        <div class="addon-row"><span>Ella Rock guided hike</span><span class="addon-price">$15–$20</span></div>
+                        <div class="addon-desc">Half-day guided hike to the Ella Rock viewpoint.</div>
+                    </div>
+                    <div class="addon-item">
+                        <div class="addon-row"><span>Scenic train</span><span class="addon-price">$8–$15</span></div>
+                        <div class="addon-desc">Hill-country rail journey (e.g. Nanu Oya–Ella).</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Enquiry Modal (Popup) -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="logo.jpg" alt="RedCeylon Logo" class="modal-logo">
+            <h2 style="font-size: 1.8rem; margin-bottom: 5px;">Request This Tour</h2>
+            <div class="tour-ref-badge">Tour Reference: RC-012 &middot; Kandy &bull; Nuwara Eliya &bull; Ella</div>
+
+            <form id="enquiryForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+94 7X XXX XXXX" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="arrivalDate">Arrival Date</label>
+                        <input type="date" id="arrivalDate" name="arrivalDate">
+                    </div>
+                    <div class="form-group">
+                        <label for="travellers">Travellers</label>
+                        <input type="number" id="travellers" name="travellers" min="1" value="2">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="hotelCategory">Hotel Category</label>
+                        <select id="hotelCategory" name="hotelCategory">
+                            <option value="3-Star / Boutique Base">3-Star / Boutique Base</option>
+                            <option value="4-Star Upgrade">4-Star Upgrade</option>
+                            <option value="5-Star Upgrade">5-Star Upgrade</option>
+                            <option value="Luxury Option">Luxury Option</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="message">Special Requirements / Message</label>
+                        <textarea id="message" name="message" placeholder="e.g. travel dates flexible, honeymoon, dietary needs..."></textarea>
+                    </div>
+                </div>
+                <div class="form-error" id="formError">Please fill in your name, email and phone number.</div>
+                <button type="submit" class="btn-primary" style="width: 100%; text-align: center;">Submit &amp; Continue</button>
+                <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 15px;">Next, choose whether to send this enquiry via WhatsApp or Email.</p>
+            </form>
+
+            <div id="enquiryStep2" style="display:none">
+                <div style="font-size: 42px; line-height: 1; margin-bottom: 12px;">&#10003;</div>
+                <h2 style="font-size: 1.6rem; margin-bottom: 8px;">Your details are ready</h2>
+                <p style="color: var(--text-light); margin-bottom: 24px;">Choose how you'd like to send your enquiry to RedCeylon. We'll get back to you as soon as possible.</p>
+                <div style="display:grid; gap:10px; max-width:340px; margin:0 auto;">
+                    <a id="waLink" class="btn-primary" target="_blank" rel="noopener" style="width:100%; text-align:center; display:block; background:#25D366;">&#128172; Continue on WhatsApp</a>
+                    <a id="emailLink" class="btn-primary" style="width:100%; text-align:center; display:block; background:var(--white); color:var(--primary); border:1px solid var(--border);">&#9993; Send via Email</a>
+                    <button type="button" class="btn-primary" style="width:100%; text-align:center; background:var(--white); color:var(--text-light); border:1px solid var(--border);" onclick="closeEnquiryModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for the Booking Form Modal -->
+    <script>
+        // Config: tour reference + contact details (swap TOUR_REF/TOUR_NAME per tour page — WhatsApp/email stay the same across all 25 pages)
+        var TOUR_REF = "RC-012";
+        var TOUR_NAME = "Kandy • Nuwara Eliya • Ella";
+        var CONTACT_EMAIL = "rankjayarathna@gmail.com";
+        var WHATSAPP_NUMBER = "94771653296"; // international format, no + or leading 0
+
+        var modal = document.getElementById("contactModal");
+        var btns = document.querySelectorAll(".open-modal-btn");
+        var span = document.getElementsByClassName("close")[0];
+        var form = document.getElementById("enquiryForm");
+        var formError = document.getElementById("formError");
+        var step2 = document.getElementById("enquiryStep2");
+        var waLink = document.getElementById("waLink");
+        var emailLink = document.getElementById("emailLink");
+
+        function resetModalSteps() {
+            form.style.display = "block";
+            step2.style.display = "none";
+        }
+
+        function closeEnquiryModal() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+            resetModalSteps();
+            form.reset();
+        }
+        window.closeEnquiryModal = closeEnquiryModal;
+
+        btns.forEach(function (btn) {
+            btn.onclick = function (e) {
+                e.preventDefault();
+                resetModalSteps();
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden"; // prevent background scrolling
+            };
+        });
+
+        span.onclick = closeEnquiryModal;
+
+        window.onclick = function (event) {
+            if (event.target == modal) closeEnquiryModal();
+        };
+
+        function buildEnquiryMessage(data) {
+            var lines = [
+                "New RedCeylon enquiry",
+                "Tour: " + TOUR_NAME + " (" + TOUR_REF + ")",
+                "Name: " + data.fullName,
+                "Email: " + data.email,
+                "Phone/WhatsApp: " + data.phone,
+                "Arrival Date: " + (data.arrivalDate || "Flexible"),
+                "Travellers: " + (data.travellers || "-"),
+                "Hotel Category: " + data.hotelCategory,
+                "Message: " + (data.message || "-")
+            ];
+            return lines.join("\n");
+        }
+
+        // Step 1: collect the enquiry details
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            var data = {
+                fullName: document.getElementById("fullName").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                phone: document.getElementById("phone").value.trim(),
+                arrivalDate: document.getElementById("arrivalDate").value,
+                travellers: document.getElementById("travellers").value,
+                hotelCategory: document.getElementById("hotelCategory").value,
+                message: document.getElementById("message").value.trim()
+            };
+
+            if (!data.fullName || !data.email || !data.phone) {
+                formError.style.display = "block";
+                return;
+            }
+            formError.style.display = "none";
+
+            var messageText = buildEnquiryMessage(data);
+
+            // Step 2: present WhatsApp and Email as the final options to send it
+            waLink.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(messageText);
+            var subject = "Quote Request: " + TOUR_NAME + " (" + TOUR_REF + ")";
+            emailLink.href = "mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(messageText);
+
+            form.style.display = "none";
+            step2.style.display = "block";
+        });
+    </script>
+</body>
+</html>
